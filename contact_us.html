@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+</head>
+<body>
+  <h1>Contact Us</h1>
+  <hr/>
+  <a href="first-page.html">Home Page</a>
+  <a href="about_us.html">About Us</a>
+  <br/>
+  <h2>Locations</h2>
+  <table border="3" >
+    <tr><!--table rows-->
+        <th>Logo</th>
+        <th>names</th><!--table headers-->
+        <th>emails Adresses</th>
+        <th>phone numbers</th>
+        <th>locations</th>
+    </tr>
+    <tr>
+        <th><img src="images/hacker.jpg" height="50"/></th>
+        <th>xavi</th><!--fits with row 2-->
+        <th>xavi6@gamil.com</th>
+        <th>87778654</th>
+        <th>Spain</th>
+    </tr>
+    <tr>
+        <th><img src="imagesZ/hacker.jpg" alt="pic"/></th>
+        <th>xavi</th><!--fits with row 2-->
+        <th>xavi6@gamil.com</th>
+        <th>87778654</th>
+        <th>Spain</th>
+    </tr>
+  </table>
+  <br/>
+  <h2>Form</h2>
+  <form action="confirmation.html">
+<!--we use action to select the destination
+after the submition-->
+    <label for="fullname">Name : *</label>
+<!--for works with the id when click 
+the label the browser knows the right
+input
+-->    
+    <input type="text" id="fullname" name="fullname"/>
+<!--type is used to what expect like an output-->
+<!--id is used in the front-end-->
+<!--name is used for the back-end-->
+    <label for="email">Email : *</label>
+    <input required type="email" id="email" name="adrEmail">
+<!--the attribute required explain 
+it self
+-->
+    <br/>
+    <label>are you employed ?</label>
+    <input type="radio" name="emp" value="Y">Yes
+<!-- by giving the radio the same name 
+    make only one choise validated -->
+    <input type="radio" name="emp" value="N"/>NO
+    <br/><br/>
+    <label for="w">what you will add </label>
+    <br/>
+    <textarea id="w" cols="50" rows="3" maxlength="10" name="w"></textarea>
+    <br/>
+    <input type="submit">
+  </form>
+</body>
+</html>
